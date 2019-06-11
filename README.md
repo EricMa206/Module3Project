@@ -1,4 +1,4 @@
-# Mod_3_Project
+# Mod_3_Project - First Step Act 2018
 
 ## Background ##
 
@@ -18,7 +18,7 @@ H2 - The difference in how legislators voted is significantly affected by whethe
 
 H3 - The difference in how legislators voted is significantly affected by whether there are more private prisons in their state.
 
-H4 - The difference in how legislators voted is significantly affected by whether the crime rates are high or low in their home state.
+H4 - The difference in how legislators voted is significantly affected by whether the crime rates are high or low in their home state. - didn't test
 
 
 ## Data Sets ##
@@ -41,8 +41,26 @@ Using data from opensecrets.org, we created csv files of all the 2016 and 2018 G
 We used the Bureau of Prisons API to request the locations of all the U.S. Federal prisons. This dataset also included Federal private prisons. Again, we created a dataframe with the data in the json file.
 
 
+We split the votes up into two populations per hypothesis: whether there was an above average number of prisons in the legislators state or not, and whether the legislator received PAC donations or not and compared their vote positions. We used chi_square homogeneity testing to compare the two populations.
 
 
+For the Hypotheses we did test
+
+H2 House/Senate - We did not find conclusive evidence that PAC donations from the private prison industry affected legislators votes.
+
+H3 House/Senate - We did not find conclusive evidence that the number of private prisons in the legislators state affected their votes.
+
+
+In particular, the sample sizes for our dataset was too narrowly tailored for one bill and our hypotheses were not informed by the magnitude of the prison industrial complex and how it dwarfs the private prison PAC. Only 8% of all incarcerated people are housed in private prisons.
+
+Not finding conclusive evidence is not evidence that no relationship existed. In particular, from press releases it seems like very few prisoners are affected by the language in the bill. Only 4% of the prison population would feel some kind of effect.
+
+### Conclusions and Future Goals
+
+It is not clear that the private prison companies are driving the mass incarceration culture in the US, but it is clear that the Federal Legislative branch is not effecting policy one way or another. Mixed signals from Washington have created a stasis in prison population regardless of "First Step" policies.
+
+
+In the future we expect to change gears and look at broader trends in Congress. We hope to pivot towards Congress as an institution. With a larger dataset we will look at the larger question of how Congress prioritizes goals and how effective an institution Congress.
 
 
 1. Collins, Doug (23 May 2018). "First Step Act". Actions – H.R.5682 – 115th Congress (2017–2018). Congress. Retrieved 21 December 2018.
